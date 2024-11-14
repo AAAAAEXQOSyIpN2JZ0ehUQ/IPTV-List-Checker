@@ -13,8 +13,7 @@ Este verificador de IPTV revisa cada enlace en una lista de canales m3u y determ
 pip install -r requirements.txt
 git clone https://github.com/tu_usuario/IPTV-List-Checker.git
 cd IPTV-List-Checker
-echo "requests\ncolorama" > requirements.txt
-pip install -r requirements.txt
+sudo python3 -m pip install -r requirements.txt 
 ```
 
 ## :rocket: Modo de Uso
@@ -36,7 +35,7 @@ Al ejecutar el script, verás algo similar a lo siguiente en la consola:
 
 ```plaintext
 ╔═════════════════════════════════════════════════════════════════╗
-║           IPTV LIST CHECKER - VERIFICADOR DE CANALES           ║
+║           IPTV LIST CHECKER - VERIFICADOR DE CANALES            ║
 ║                                                                 ║
 ║      Herramienta para verificar el estado de canales IPTV       ║
 ║      Activos se muestran en verde y los inactivos en rojo       ║
