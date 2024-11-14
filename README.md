@@ -43,6 +43,8 @@ Al ejecutar el script, verás algo similar a lo siguiente en la consola:
 ║                                                                 ║
 ║      Herramienta para verificar el estado de canales IPTV       ║
 ║      Activos se muestran en verde y los inactivos en rojo       ║
+║                                                                 ║
+║       Versión codificada por: Jony Rivera (Dzhoni)              ║
 ╚═════════════════════════════════════════════════════════════════╝
 
 ✔️ Canal activo: http://example.com/canal1.m3u8
@@ -50,6 +52,8 @@ Al ejecutar el script, verás algo similar a lo siguiente en la consola:
 
 Canales activos guardados en: lista_de_canales_limpia.txt
 Canales inactivos guardados en: canales_inactivos.txt
+
+GITHUB OFICIAL: https://github.com/JennValentine/Webshell_Scanner
 ```
 
 Archivos de salida:
@@ -107,16 +111,14 @@ Puedes ajustar los comandos y configuraciones del script según tus necesidades 
 | :file_folder:    | Herramientas                | Carpeta de herramientas extras                           |
 | :file_folder:    | Imágenes                    | Carpeta para imágenes del proyecto                       |
 | :page_facing_up: | .gitattributes              | Archivo para configuración de Git                        |
+| :book:           | README.md                   | Archivo de documentación principal                       |
+| :package:        | install.sh                  | Script de instalación automatizada                       |
 | :page_facing_up: | LICENSE                     | Archivo de licencia del proyecto                         |
 | :page_facing_up: | iptv_checker.py             | Script principal para verificar enlaces de canales IPTV  |
 | :page_facing_up: | lista_de_canales.txt        | Archivo de entrada con enlaces de canales en formato m3u |
 | :page_facing_up: | lista_de_canales_limpia.txt | Archivo de salida con canales activos                    |
 | :page_facing_up: | canales_inactivos.txt       | Archivo de salida con canales inactivos                  |
 | :page_facing_up: | requirements.txt            | Archivo con las dependencias necesarias para el script   |
-| :book:           | README.md                   | Archivo de documentación principal                       |
-
-| :package:        | install.sh          | Script de instalación automatizada        |
-| :page_facing_up: | menu.sh             | Herramienta de utilidades                 |
 
 ## :star2: Contribuciones
 
@@ -127,6 +129,6 @@ Las contribuciones son bienvenidas. Si tienes ideas para mejorar este script o e
 - Uso Responsable: Este script está diseñado para ser utilizado en dispositivos y redes que te pertenecen o para las que tienes permiso de uso. No lo utilices para actividades no autorizadas.
 
 ## :email: Contacto 
-* :busts_in_silhouette: **Dzhoni**: [GitHub](https://github.com/AAAAAEXQOSyIpN2JZ0ehUQ/Hacking-Wifi) - Desarrollador Hacking-Wifi
+* :busts_in_silhouette: **Dzhoni**: [GitHub](https://github.com/AAAAAEXQOSyIpN2JZ0ehUQ/IPTV-List-Checker) - Desarrollador IPTV-List-Checker
 
 ☆ https://t.me/AAAAAEXQOSyIpN2JZ0ehUQ [  ⃘⃤꙰✰ ] ☆
