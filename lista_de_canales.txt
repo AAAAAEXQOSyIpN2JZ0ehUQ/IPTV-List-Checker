@@ -1,3 +1,3 @@
 # Archivo de entrada: lista_de_canales.txt
 
-Pega aqui todo el contenido de tu lista m3u o m3u8
+Pega aquí  todo el contenido de tu lista m3u o m3u8
