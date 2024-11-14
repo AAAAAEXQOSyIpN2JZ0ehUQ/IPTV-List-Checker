@@ -1,4 +1,4 @@
-﻿# 📺 IPTV List Checker - Verificador de Canales
+﻿# :tv: IPTV List Checker - Verificador de Canales :octocat:
 
 ### Herramienta para verificar el estado de canales IPTV en listas m3u
 Este script permite verificar rápidamente si los enlaces de canales IPTV en una lista m3u están activos o inactivos. Los canales activos se guardan en un archivo separado, mientras que los inactivos se listan en otro archivo.
@@ -11,9 +11,19 @@ Este verificador de IPTV revisa cada enlace en una lista de canales m3u y determ
 ## :computer: Instalación
 ```python3
 pip install -r requirements.txt
-git clone https://github.com/tu_usuario/IPTV-List-Checker.git
+git clone https://github.com/AAAAAEXQOSyIpN2JZ0ehUQ/IPTV-List-Checker.git
 cd IPTV-List-Checker
+ls -ltha
+```
+
+## :package: Paquete
+```python
 sudo python3 -m pip install -r requirements.txt 
+```
+
+## :computer: Instalación en una Línea
+```bash
+sudo wget https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0ehUQ/IPTV-List-Checker/main/install.sh -O - | sudo bash
 ```
 
 ## :rocket: Modo de Uso
@@ -23,13 +33,7 @@ Ejecuta el script de la siguiente manera:
 python3 iptv_checker.py
 ```
 
-Archivo de entrada: lista_de_canales.txt
-
-Archivos de salida:
-- lista_de_canales_limpia.txt - Contiene los canales activos.
-- canales_inactivos.txt - Contiene los canales inactivos.
-
-## ✨ Ejemplo de Salida
+## :sparkles: Ejemplo de Salida
 
 Al ejecutar el script, verás algo similar a lo siguiente en la consola:
 
@@ -47,14 +51,22 @@ Canales activos guardados en: lista_de_canales_limpia.txt
 Canales inactivos guardados en: canales_inactivos.txt
 ```
 
-## 📋 Ejemplo de Formato de Entrada 
+Archivos de salida:
+- lista_de_canales_limpia.txt - Contiene los canales activos.
+- canales_inactivos.txt - Contiene los canales inactivos.
+
+
+## :clipboard: Ejemplo de Formato de Entrada 
+
+Archivo de entrada: lista_de_canales.txt
+
 ```plaintext
 #EXTM3U
 #EXTINF:-1, Canal Ejemplo
 http://example.com/stream.m3u8
 ```
 
-## 🔧 Archivos de Configuración
+## :wrench: Archivos de Configuración
 
 Entrada: lista_de_canales.txt
 
@@ -84,7 +96,7 @@ Salida:
 
 ## :memo: Personalización
 
-Puedes ajustar los comandos y configuraciones del script según tus necesidades modificando el archivo `   `
+Puedes ajustar los comandos y configuraciones del script según tus necesidades modificando el archivo `IPTV-List-Checker/verificar_iptv.py`
 
 ## :open_file_folder: Estructura del Repositorio
 
