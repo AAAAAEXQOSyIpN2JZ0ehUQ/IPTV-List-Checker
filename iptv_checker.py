@@ -2,7 +2,7 @@
 #====================================================
 #   SCRIPT:                   IPTV List Checker - Verificador de Canales
 #   DESARROLLADO POR:         Jony Rivera (Dzhoni) 
-#   FECHA DE ACTUALIZACIÃƒâ€œN:  14-11-2024 
+#   FECHA DE ACTUALIZACIÃ“N:  14-11-2024 
 #   CONTACTO POR TELEGRAMA:   https://t.me/Dzhoni_dev
 #   GITHUB OFICIAL:           https://github.com/AAAAAEXQOSyIpN2JZ0ehUQ/IPTV-List-Checker
 #====================================================
@@ -104,7 +104,7 @@ def limpiar_lista(input_file, output_file, inactive_file):
                     archivo_salida.write(linea)
 
     except KeyboardInterrupt:
-        print(f"{yellow}\n[!] Ejecución interrumpida por el usuario. Guardando progreso...")
+        print(f"{yellow}\n{unknown} Ejecución interrumpida por el usuario. Guardando progreso...")
         print(f"{yellow}El archivo ha sido procesado hasta el punto de la interrupción.")
         exit(0)
     except Exception as e:
