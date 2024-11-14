@@ -81,5 +81,5 @@ inactive_file = "canales_inactivos.txt"  # Archivo para canales inactivos
 limpiar_lista(input_file, output_file, inactive_file)
 print(Fore.CYAN + f"\nCanales activos guardados en: {output_file}")
 print(Fore.CYAN + f"Canales inactivos guardados en: {inactive_file}")
-
+print()
 print(Fore.CYAN + f"GITHUB OFICIAL: https://github.com/AAAAAEXQOSyIpN2JZ0ehUQ/IPTV-List-Checker")
