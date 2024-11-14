@@ -1,68 +1,31 @@
 #!/usr/bin/env python3
 #====================================================
-#   SCRIPT:                   IPTV List Checker - Verificador de Canales
-#   DESARROLLADO POR:         Jony Rivera (Dzhoni) 
-#   FECHA DE ACTUALIZACIÃ“N:  14-11-2024 
-#   CONTACTO POR TELEGRAMA:   https://t.me/Dzhoni_dev
-#   GITHUB OFICIAL:           https://github.com/AAAAAEXQOSyIpN2JZ0ehUQ/IPTV-List-Checker
+#   SCRIPT:                   Webshell Scanner
+#   DESARROLLADO POR:         Jenn Valentine 
+#   FECHA DE ACTUALIZACIÃƒâ€œN:  29-03-2024 
+#   CONTACTO POR TELEGRAMA:   https://t.me/JennValentine
+#   GITHUB OFICIAL:           https://github.com/JennValentine/Webshell_Scanner
 #====================================================
 
 # Importación de módulos necesarios
 import requests
 from concurrent.futures import ThreadPoolExecutor
+from colorama import init, Fore, Style
 import time
 
-# Paleta de colores
-reset = "\033[0m"       # Restablecer todos los estilos y colores
-bold = "\033[1m"        # Texto en negrita
-italic = "\033[3m"      # Texto en cursiva
-underline = "\033[4m"   # Texto subrayado
-blink = "\033[5m"       # Texto parpadeante
-reverse = "\033[7m"     # Invertir colores de fondo y texto
-hidden = "\033[8m"      # Texto oculto (generalmente invisible)
-
-# Colores de texto
-black = "\033[0;30m"     # Negro
-red = "\033[0;31m"       # Rojo
-green = "\033[0;32m"     # Verde
-yellow = "\033[0;33m"    # Amarillo
-blue = "\033[0;34m"      # Azul
-magenta = "\033[0;35m"   # Magenta
-cyan = "\033[0;36m"      # Cian
-white = "\033[0;37m"     # Blanco
-
-# Colores de fondo
-bg_black = "\033[0;40m"     # Fondo Negro
-bg_red = "\033[0;41m"       # Fondo Rojo
-bg_green = "\033[0;42m"     # Fondo Verde
-bg_yellow = "\033[0;43m"    # Fondo Amarillo
-bg_blue = "\033[0;44m"      # Fondo Azul
-bg_magenta = "\033[0;45m"   # Fondo Magenta
-bg_cyan = "\033[0;46m"      # Fondo Cian
-bg_white = "\033[0;47m"     # Fondo Blanco
-
-# Iconos v3
-checkmark = f"{white}[{green}+{white}]"
-error = f"{white}[{red}-{white}]{red}"
-info = f"{white}[{yellow}*{white}]{yellow}"
-unknown = f"{white}[{blue}!{white}]{blue}"
-process = f"{white}[{magenta}>>{white}]"
-indicator = f"{red}==>{cyan}"
-
-# Barra de separación
-barra = f"{blue}|--------------------------------------------|{reset}"
-bar = f"{yellow}----------------------------------------------{reset}"
+# Inicializa colorama
+init(autoreset=True)
 
 # Función para mostrar el banner
 def mostrar_banner():
     banner = f"""
-{cyan}{bold}╔═════════════════════════════════════════════════════════════════╗
-║           {green}IPTV LIST CHECKER - VERIFICADOR DE CANALES            {cyan}║
-║                                                                 {cyan}║
-║      {yellow}Herramienta para verificar el estado de canales IPTV       {cyan}║
-║      {yellow}Activos se muestran en verde y los inactivos en rojo       {cyan}║
-║                                                                 {cyan}║
-║       {magenta}Versión codificada por: Jony Rivera (Dzhoni)              {cyan}║
+{Fore.CYAN}{Style.BRIGHT}╔═════════════════════════════════════════════════════════════════╗
+║           {Fore.GREEN}IPTV LIST CHECKER - VERIFICADOR DE CANALES            {Fore.CYAN}║
+║                                                                 {Fore.CYAN}║
+║      {Fore.YELLOW}Herramienta para verificar el estado de canales IPTV       {Fore.CYAN}║
+║      {Fore.YELLOW}Activos se muestran en verde y los inactivos en rojo       {Fore.CYAN}║
+║                                                                 {Fore.CYAN}║
+║       {Fore.MAGENTA}Versión codificada por: Jony Rivera (Dzhoni)              {Fore.CYAN}║
 ╚═════════════════════════════════════════════════════════════════╝
 """
     print(banner)
@@ -96,19 +59,19 @@ def limpiar_lista(input_file, output_file, inactive_file):
                         futuro = executor.submit(verificar_url, linea.strip())
                         if mantener_seccion and futuro.result():
                             archivo_salida.write(linea)
-                            print(f"{checkmark} Canal activo: {linea.strip()}")
+                            print(Fore.GREEN + f"✔️ Canal activo: {linea.strip()}")
                         else:
                             archivo_inactivos.write(linea)
-                            print(f"{error} Canal inactivo guardado en lista de inactivos: {linea.strip()}")
+                            print(Fore.RED + f"❌ Canal inactivo guardado en lista de inactivos: {linea.strip()}")
                 else:
                     archivo_salida.write(linea)
 
     except KeyboardInterrupt:
-        print(f"{yellow}\n{unknown} Ejecución interrumpida por el usuario. Guardando progreso...")
-        print(f"{yellow}El archivo ha sido procesado hasta el punto de la interrupción.")
+        print(Fore.YELLOW + "\n[!] Ejecución interrumpida por el usuario. Guardando progreso...")
+        print(Fore.YELLOW + "El archivo ha sido procesado hasta el punto de la interrupción.")
         exit(0)
     except Exception as e:
-        print(f"{error} Error: {str(e)}")
+        print(Fore.RED + f"Error: {str(e)}")
         exit(1)
 
 # Llama a la función con los archivos de entrada y salida
@@ -116,7 +79,7 @@ input_file = "lista_de_canales.txt"  # Cambia este nombre por el archivo que qui
 output_file = "lista_de_canales_limpia.txt"
 inactive_file = "canales_inactivos.txt"  # Archivo para canales inactivos
 limpiar_lista(input_file, output_file, inactive_file)
-print(f"{cyan}Canales activos guardados en: {output_file}")
-print(f"{cyan}Canales inactivos guardados en: {inactive_file}")
+print(Fore.CYAN + f"\nCanales activos guardados en: {output_file}")
+print(Fore.CYAN + f"Canales inactivos guardados en: {inactive_file}")
 
-print(f"\n{info} {white}GITHUB OFICIAL: {green}https://github.com/AAAAAEXQOSyIpN2JZ0ehUQ/IPTV-List-Checker")
+print(Fore.CYAN + f"GITHUB OFICIAL: https://github.com/AAAAAEXQOSyIpN2JZ0ehUQ/IPTV-List-Checker")
