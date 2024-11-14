@@ -44,9 +44,10 @@ Al ejecutar el script, verás algo similar a lo siguiente en la consola:
 ║      Herramienta para verificar el estado de canales IPTV       ║
 ║      Activos se muestran en verde y los inactivos en rojo       ║
 ╚═════════════════════════════════════════════════════════════════╝
+
 ✔️ Canal activo: http://example.com/canal1.m3u8
 ❌ Canal inactivo eliminado: http://example.com/canal2.m3u8
-...
+
 Canales activos guardados en: lista_de_canales_limpia.txt
 Canales inactivos guardados en: canales_inactivos.txt
 ```
