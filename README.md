@@ -53,7 +53,7 @@ Al ejecutar el script, verás algo similar a lo siguiente en la consola:
 Canales activos guardados en: lista_de_canales_limpia.txt
 Canales inactivos guardados en: canales_inactivos.txt
 
-GITHUB OFICIAL: https://github.com/JennValentine/Webshell_Scanner
+GITHUB OFICIAL: https://github.com/AAAAAEXQOSyIpN2JZ0ehUQ/IPTV-List-Checker
 ```
 
 Archivos de salida:
