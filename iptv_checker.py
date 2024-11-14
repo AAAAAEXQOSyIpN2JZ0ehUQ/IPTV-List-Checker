@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
 #====================================================
-#   SCRIPT:                   Webshell Scanner
-#   DESARROLLADO POR:         Jenn Valentine 
-#   FECHA DE ACTUALIZACIÃƒâ€œN:  29-03-2024 
-#   CONTACTO POR TELEGRAMA:   https://t.me/JennValentine
-#   GITHUB OFICIAL:           https://github.com/JennValentine/Webshell_Scanner
+#   SCRIPT:                   IPTV List Checker - Verificador de Canales
+#   DESARROLLADO POR:         Jony Rivera (Dzhoni) 
+#   FECHA DE ACTUALIZACIÃ“N:  14-11-2024 
+#   CONTACTO POR TELEGRAMA:   https://t.me/Dzhoni_dev
+#   GITHUB OFICIAL:           https://github.com/AAAAAEXQOSyIpN2JZ0ehUQ/IPTV-List-Checker
 #====================================================
 
 # Importación de módulos necesarios
@@ -82,4 +82,4 @@ limpiar_lista(input_file, output_file, inactive_file)
 print(Fore.CYAN + f"\nCanales activos guardados en: {output_file}")
 print(Fore.CYAN + f"Canales inactivos guardados en: {inactive_file}")
 
-print(Fore.CYAN + f"GITHUB OFICIAL: https://github.com/AAAAAEXQOSyIpN2JZ0ehUQ/IPTV-List-Checker")
+print(Fore.CYAN + f"\nGITHUB OFICIAL: https://github.com/AAAAAEXQOSyIpN2JZ0ehUQ/IPTV-List-Checker")
