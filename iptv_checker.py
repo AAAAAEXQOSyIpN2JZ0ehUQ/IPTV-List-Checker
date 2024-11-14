@@ -1,5 +1,13 @@
 #!/usr/bin/env python3
+#====================================================
+#   SCRIPT:                   Webshell Scanner
+#   DESARROLLADO POR:         Jenn Valentine 
+#   FECHA DE ACTUALIZACIÃƒâ€œN:  29-03-2024 
+#   CONTACTO POR TELEGRAMA:   https://t.me/JennValentine
+#   GITHUB OFICIAL:           https://github.com/JennValentine/Webshell_Scanner
+#====================================================
 
+# Importación de módulos necesarios
 import requests
 from concurrent.futures import ThreadPoolExecutor
 from colorama import init, Fore, Style
@@ -16,6 +24,8 @@ def mostrar_banner():
 ║                                                                 {Fore.CYAN}║
 ║      {Fore.YELLOW}Herramienta para verificar el estado de canales IPTV       {Fore.CYAN}║
 ║      {Fore.YELLOW}Activos se muestran en verde y los inactivos en rojo       {Fore.CYAN}║
+║                                                                 {Fore.CYAN}║
+║       {Fore.MAGENTA}Versión codificada por: Jony Rivera (Dzhoni)              {Fore.CYAN}║
 ╚═════════════════════════════════════════════════════════════════╝
 """
     print(banner)
@@ -71,3 +81,5 @@ inactive_file = "canales_inactivos.txt"  # Archivo para canales inactivos
 limpiar_lista(input_file, output_file, inactive_file)
 print(Fore.CYAN + f"\nCanales activos guardados en: {output_file}")
 print(Fore.CYAN + f"Canales inactivos guardados en: {inactive_file}")
+
+print(Fore.CYAN + f"GITHUB OFICIAL: https://github.com/AAAAAEXQOSyIpN2JZ0ehUQ/IPTV-List-Checker")
