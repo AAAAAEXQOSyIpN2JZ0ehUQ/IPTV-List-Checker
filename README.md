@@ -25,7 +25,7 @@ sudo python3 -m pip install -r requirements.txt
 
 ## :computer: Instalación en una Línea
 ```bash
-sudo wget https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0ehUQ/IPTV-List-Checker/main/install.sh -O - | sudo bash
+wget https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0ehUQ/IPTV-List-Checker/main/install.sh -O - | sudo bash
 ```
 
 ## :rocket: Modo de Uso
@@ -53,9 +53,12 @@ Al ejecutar el script, verás algo similar a lo siguiente en la consola:
 ❌ Canal inactivo eliminado: http://example.com/canal2.m3u8
 
 Canales activos guardados en: lista_de_canales_limpia.txt
+
 Canales inactivos guardados en: canales_inactivos.txt
 
-GITHUB OFICIAL: https://github.com/AAAAAEXQOSyIpN2JZ0ehUQ/IPTV-List-Checker
+[*] GITHUB OFICIAL: https://github.com/AAAAAEXQOSyIpN2JZ0ehUQ/IPTV-List-Checker
+
+Presiona Enter para cerrar la terminal.
 ```
 
 Archivos de salida:
