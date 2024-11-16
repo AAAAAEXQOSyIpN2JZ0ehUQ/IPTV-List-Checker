@@ -11,29 +11,70 @@ Este verificador de IPTV revisa cada enlace en una lista de canales m3u y determ
 - Los **canales inactivos** se registran en un archivo de canales caídos para revisión.
 
 ## :computer: Instalación
+
+### En Windows:
+
+![logo](https://github.com/AAAAAEXQOSyIpN2JZ0ehUQ/IPTV-List-Checker/blob/main/Imagenes/IPTV-List-Checker_Windows.png)
+
+Para instalar y ejecutar el script IPTV List Checker, sigue estos pasos:
+
+1. Descarga el archivo ZIP del repositorio:
+
+   [Descargar el repositorio](https://github.com/AAAAAEXQOSyIpN2JZ0ehUQ/IPTV-List-Checker/archive/refs/heads/main.zip)
+
+2. Extrae el contenido del archivo ZIP:
+
+   Descomprime el archivo descargado en una carpeta de tu elección. Esto creará una carpeta con todos los archivos necesarios.
+
+## :rocket: Modo de Uso
+
+Sigue estos pasos para ejecutar el script.
+
+1. Navega al directorio del script Windows.
+
+   Navega hasta la carpeta donde descomprimiste el archivo ZIP. 
+
+2. Ejecuta el script:
+
+   Dentro de la carpeta descomprimida, haz doble clic en uno de los siguientes archivos para ejecutar el script:
+
+   - `RunGet-iptv_checker.cmd` 
+   - `RunGet-iptv_checker.bat` 
+
+3. **Visualiza los resultados:**
+
+   - El script mostrará el progreso y resultados en la consola.
+   - Los canales se guardarán en un archivo de texto llamado `lista_de_canales_limpia.txt` y en el canales eliminados `canales_inactivos.txt`.
+
+### En Linux:
+
+![logo](https://github.com/AAAAAEXQOSyIpN2JZ0ehUQ/IPTV-List-Checker/blob/main/Imagenes/IPTV-List-Checker_Linux.png)
+
 ```python3
-pip install -r requirements.txt
 git clone https://github.com/AAAAAEXQOSyIpN2JZ0ehUQ/IPTV-List-Checker.git
 cd IPTV-List-Checker
+pip install -r requirements.txt
 ls -ltha
 ```
 
-## :package: Paquete
-```python
-sudo python3 -m pip install -r requirements.txt 
-```
+1. Navega al directorio del script Linux:
 
-## :computer: Instalación en una Línea
-```bash
-wget https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0ehUQ/IPTV-List-Checker/main/install.sh -O - | sudo bash
-```
+  Accede a la carpeta donde descargaste el script.
 
 ## :rocket: Modo de Uso
-Ejecuta el script de la siguiente manera:
 
-```python3
+2. Ejecuta el script:
+
+  Abre una terminal y ejecuta el script usando el siguiente comando:
+
+```bash
 python3 iptv_checker.py
 ```
+
+3. **Visualiza los resultados:**
+
+   - El script mostrará el progreso y resultados en la consola.
+   - Los canales se guardarán en un archivo de texto llamado `lista_de_canales_limpia.txt` y en el canales eliminados `canales_inactivos.txt`.
 
 ## :sparkles: Ejemplo de Salida
 
@@ -49,8 +90,8 @@ Al ejecutar el script, verás algo similar a lo siguiente en la consola:
 ║       Versión codificada por: Jony Rivera (Dzhoni)              ║
 ╚═════════════════════════════════════════════════════════════════╝
 
-✔️ Canal activo: http://example.com/canal1.m3u8
-❌ Canal inactivo eliminado: http://example.com/canal2.m3u8
+[+] Canal activo: http://example.com/canal1.m3u8
+[-] Canal inactivo eliminado: http://example.com/canal2.m3u8
 
 Canales activos guardados en: lista_de_canales_limpia.txt
 
@@ -124,6 +165,8 @@ Puedes ajustar los comandos y configuraciones del script según tus necesidades 
 | :page_facing_up: | lista_de_canales_limpia.txt | Archivo de salida con canales activos                    |
 | :page_facing_up: | canales_inactivos.txt       | Archivo de salida con canales inactivos                  |
 | :page_facing_up: | requirements.txt            | Archivo con las dependencias necesarias para el script   |
+| :page_facing_up: | RunGet-iptv_checker.bat     | Script de batch para ejecutar el script en Windows       |
+| :page_facing_up: | RunGet-iptv_checker.cmd     | Script de bat para ejecutar el script en Windows         |
 
 ## :star2: Contribuciones
 
