@@ -1,6 +1,4 @@
-﻿![logo](https://github.com/AAAAAEXQOSyIpN2JZ0ehUQ/IPTV-List-Checker/blob/main/Imagenes/IPTV-List-Checker_Linux.png)
-
-# :tv: IPTV List Checker - Verificador de Canales :octocat:
+﻿# :tv: IPTV List Checker - Verificador de Canales :octocat:
 
 ### Herramienta para verificar el estado de canales IPTV en listas m3u
 Este script permite verificar rápidamente si los enlaces de canales IPTV en una lista m3u están activos o inactivos. Los canales activos se guardan en un archivo separado, mientras que los inactivos se listan en otro archivo.
