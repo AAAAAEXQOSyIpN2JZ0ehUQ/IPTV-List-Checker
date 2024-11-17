@@ -1,4 +1,4 @@
-﻿![logo](https://github.com/AAAAAEXQOSyIpN2JZ0ehUQ/IPTV-List-Checker/blob/main/Im%C3%A1genes/IPTV-List-Checker.png)
+﻿![logo](https://github.com/AAAAAEXQOSyIpN2JZ0ehUQ/IPTV-List-Checker/blob/main/Imagenes/IPTV-List-Checker_Linux.png)
 
 # :tv: IPTV List Checker - Verificador de Canales :octocat:
 
